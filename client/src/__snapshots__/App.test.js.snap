@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Matches the snapshot 1`] = `
+<div
+  id="fullstandings"
+>
+  <div
+    className="container-fluid"
+  >
+    <h5>
+      2018 NFL Standings
+    </h5>
+    <table
+      className="table table-striped table-hover table-sm rounded"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            Team
+          </th>
+          <th
+            scope="col"
+          >
+            W
+          </th>
+          <th
+            scope="col"
+          >
+            L
+          </th>
+          <th
+            scope="col"
+          >
+            T
+          </th>
+          <th
+            scope="col"
+          >
+            PCT
+          </th>
+          <th
+            scope="col"
+          >
+            PF
+          </th>
+          <th
+            scope="col"
+          >
+            PA
+          </th>
+          <th
+            scope="col"
+          >
+            DIFF
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <h5>
+          AFC EAST
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          AFC NORTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          AFC SOUTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          AFC WEST
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC EAST
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC NORTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC SOUTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC WEST
+        </h5>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`App component Should render App component correctly 1`] = `
+<div
+  id="fullstandings"
+>
+  <FullStandings
+    teams={Array []}
+  />
+</div>
+`;
