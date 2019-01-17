@@ -2,9 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import axios from 'axios';
-import dbCall from '../../config/key';
 
-import Standings from './components/Standings';
 import FullStandings from './components/FullStandings';
 
 export default class App extends Component {
@@ -12,10 +10,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       teams: [],
-      view: 'main',
     };
-    this.renderView = this.renderView.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -39,34 +34,12 @@ export default class App extends Component {
       });
   }
 
-  handleClick() {
-    const { view } = this.state;
-    this.setState({
-      view: 'fullstandings',
-    });
-  }
-
-  // eslint-disable-next-line consistent-return
-  renderView() {
-    const { view, teams } = this.state;
-    if (view === 'main') {
-      return (
-        <div id="mainstandings">
-          <Standings teams={teams} handleClick={this.handleClick} />
-        </div>
-      );
-    } if (view === 'fullstandings') {
-      return (
-        <div id="fullstandings">
-          <FullStandings teams={teams} />
-        </div>
-      );
-    }
-  }
-
   render() {
+    const { teams } = this.state;
     return (
-      this.renderView()
+      <div id="fullstandings">
+        <FullStandings teams={teams} />
+      </div>
     );
   }
 }

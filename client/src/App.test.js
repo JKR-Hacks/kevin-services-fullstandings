@@ -4,9 +4,6 @@
 import axios from 'axios';
 
 import App from './App';
-import FullStandings from './components/FullStandings';
-
-jest.mock('./components/FullStandings', () => 'fullstandings');
 
 describe('App component', () => {
   it('Matches the snapshot', () => {
@@ -31,19 +28,6 @@ describe('App component', () => {
     const wrapper = mount(<App />);
     wrapper.instance().componentDidMount();
     expect(spy).toHaveBeenCalled();
-  });
-
-  it('Should update state view when handleClick() is called', () => {
-    const wrapper = shallow(<App />);
-    wrapper.instance().handleClick();
-    expect(wrapper.state()).toEqual({ teams: [], view: 'fullstandings' });
-  });
-});
-
-describe('FullStandings component', () => {
-  it('Should render FullStandings component', () => {
-    const tree = mount(<FullStandings />).toJSON;
-    expect(tree).toMatchSnapshot();
   });
 });
 

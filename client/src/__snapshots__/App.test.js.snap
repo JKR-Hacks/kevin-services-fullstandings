@@ -2,13 +2,13 @@
 
 exports[`App component Matches the snapshot 1`] = `
 <div
-  id="mainstandings"
+  id="fullstandings"
 >
   <div
     className="container-fluid"
   >
     <h5>
-      2018 NFC West Standings
+      2018 NFL Standings
     </h5>
     <table
       className="table table-striped table-hover table-sm rounded"
@@ -50,30 +50,64 @@ exports[`App component Matches the snapshot 1`] = `
           >
             PA
           </th>
+          <th
+            scope="col"
+          >
+            DIFF
+          </th>
         </tr>
       </thead>
-      <tbody />
+      <tbody>
+        <h5>
+          AFC EAST
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          AFC NORTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          AFC SOUTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          AFC WEST
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC EAST
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC NORTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC SOUTH
+        </h5>
+      </tbody>
+      <tbody>
+        <h5>
+          NFC WEST
+        </h5>
+      </tbody>
     </table>
-    <button
-      className="btn btn-link"
-      onClick={[Function]}
-      type="button"
-    >
-      Full Standings
-    </button>
   </div>
 </div>
 `;
 
 exports[`App component Should render App component correctly 1`] = `
 <div
-  id="mainstandings"
+  id="fullstandings"
 >
-  <Standings
-    handleClick={[Function]}
+  <FullStandings
     teams={Array []}
   />
 </div>
 `;
-
-exports[`FullStandings component Should render FullStandings component 1`] = `undefined`;
