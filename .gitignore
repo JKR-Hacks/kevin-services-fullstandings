@@ -1,0 +1,7 @@
+node_modules
+client/dist/bundle.js
+config
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

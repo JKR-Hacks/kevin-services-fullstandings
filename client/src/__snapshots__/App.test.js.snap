@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Matches the snapshot 1`] = `
+<div
+  id="mainstandings"
+>
+  <div
+    className="container-fluid"
+  >
+    <h5>
+      2018 NFC West Standings
+    </h5>
+    <table
+      className="table table-striped table-hover table-sm rounded"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            Team
+          </th>
+          <th
+            scope="col"
+          >
+            W
+          </th>
+          <th
+            scope="col"
+          >
+            L
+          </th>
+          <th
+            scope="col"
+          >
+            T
+          </th>
+          <th
+            scope="col"
+          >
+            PCT
+          </th>
+          <th
+            scope="col"
+          >
+            PF
+          </th>
+          <th
+            scope="col"
+          >
+            PA
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <button
+      className="btn btn-link"
+      onClick={[Function]}
+      type="button"
+    >
+      Full Standings
+    </button>
+  </div>
+</div>
+`;
+
+exports[`App component Should render App component correctly 1`] = `
+<div
+  id="mainstandings"
+>
+  <Standings
+    handleClick={[Function]}
+    teams={Array []}
+  />
+</div>
+`;
+
+exports[`FullStandings component Should render FullStandings component 1`] = `undefined`;
